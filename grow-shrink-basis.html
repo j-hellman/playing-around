@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Grow, shrink and basis</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+</html>
+
+<style>
+  /* transforma em flexbox */
+ .container {
+    display: flex;
+
+    /* limita o crescimento do container */
+    max-width: 900px;
+
+    /* limita a diminuicao do container */
+    min-width: 400px;
+  }
+
+ .container > * {
+    flex: auto;
+  }
+
+
+
+  /* Evita a quebra do titulo ao diminuir */
+  /* .three h3 {
+    width: max-content;
+  } */
+
+
+  /* Determina mudanca na direcao do texto ao chegar nesse ponto  */
+  @media (max-width: 1032px) {
+    /* .container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .container > * {
+      max-width: 75ch;
+      width: 100%
+    }*/
+
+    .container {
+      display: block;
+     background-color: blue;
+    }
+  
+    .container> * {
+    max-width: 75ch;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid black;
+    }
+  }
+
+
+  /* Esse comando flex substitui os tres: grow, shrink, basis. */
+  /* .container > * {
+    flex: auto;
+  } */
+
+  /* Objective 1: Using flex-basis, set one of the divs to be 50% larger thn the others. */
+  /* .one {
+   flex-grow: 1;
+    flex-shrink: 1;
+   flex-basis: 45ch;
+  }
+
+  .two {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 30ch;
+  }
+
+  .three {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 30ch;
+  }*/
+
+  /* Objective 2: Using flex-grow, set one of the divs in the above example to fill extra space. */
+  /* .one {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 30ch;
+  }
+
+  .two {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 20ch;
+  }
+
+  .three {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 20ch;
+  } */
+
+
+  /* Objective 3: Using flex-grow, set one of the divs to grow at twice the rate as the others.  */
+  /* .one {
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: 30ch;
+  }
+
+  .two {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 20ch;
+  }
+
+  .three {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 20ch;
+  } */
+
+  /* Objective 4: Using flex-shrink, set one of the divs NOT shrink when there is not enough space */
+  .one {
+    flex-grow: 2;
+    flex-shrink: 0;
+    flex-basis: 30ch;
+  }
+
+  .two {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 20ch;
+  }
+
+  .three {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 20ch;
+  }
+
+
+  /* Make it pretty */
+  main {
+    background-color: green;
+    width: 75vw;
+    padding: 1em;
+    margin: 25vh auto 0;
+  }
+
+  div {
+    background-color: white;
+    padding: 0.5em;
+    margin: 0.8em;
+    color: black;
+    text-align: center;
+  }
+  
+  div:hover {
+    opacity: 50%;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+</style>
+
+<body>
+  <main class="container">
+    <div class="one">
+      <h1><a href="#">Flex Item 1</a></h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis quidem nihil officiis dolor ut aspernatur ex blanditiis sequi veritatis perferendis.</p>
+    </div>
+    <div class="two">
+        <h1><a href="#">Flex Item 2</a></h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis quidem nihil officiis dolor ut aspernatur ex blanditiis sequi veritatis perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, corrupti!</p>
+    </div>
+    <div class="three">
+      <h1><a href="#">Flex Item 3</a></h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis quidem nihil.</p>
+    </div>
+  </main>
+</body>

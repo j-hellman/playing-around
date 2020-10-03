@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+.container {
+  background: pink;
+  height: 25vh;
+  width: 80vw;
+  padding: 1em; /* margem do texto com a borda */
+  margin: 25vh auto 0;
+  /* align-items: flex-start; */ 
+  
+  display: flex;
+  flex-direction: row;
+}
+
+.item {
+  background: lightblue;
+  margin: 0.5rem;
+}
+
+.one {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 250px; /* o quanto ele vai ocupar se tiver espaco */
+  /* flex: ; uniao do grow, shrink, basis */
+  order: 0 /* ordem de posicionamento do item no container */
+  /* align-self: ; alinha o item individualmente: flex-start, center, flex-end */
+}
+
+.two {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 250px;
+  /* flex: ; */
+  order: 0;
+  /* align-self: */
+}
+
+.three {
+  flex-grow: 1;
+  flex-shrink: 1 ;
+  flex-basis: 250px;
+  /* flex: ; */
+  order: 0;
+  /* align-self: ; */
+}
+</style>
+
+<body>
+  <div class="container">
+    <div class="item one">Flex item 1</div>
+    <div class="item two">Flex item 2</div>
+    <div class="item three">Flex item 3</div>
+  </div>
+</body>
+
+</html>
