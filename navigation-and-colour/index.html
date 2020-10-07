@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation and Colour</title>
+</head>
+
+<style>
+/* Objective 1: Reset default list styles: remove bullets and left indent. */
+nav ul {
+  list-style-type: none; /* controls the bullets */
+  padding-left: 0; /* remove margin left */ 
+}
+
+
+/* Objective 2: Reset default link styles: remove underline, and change color. */
+nav a {
+  text-decoration: none; /* controls links */
+
+  border: 2px solid black; 
+
+  /* Objective 4: Increase the clickable area of the links using padding. */
+  padding: 1rem 0.8rem;
+  display: block;
+  text-align: center;
+}
+
+
+/* Objective 5: Display links horizontally using flexbox */
+nav ul {
+  display: flex;
+}
+
+.left a {
+  color: black;
+}
+
+.left a:hover {
+  background: blue;
+  color: white;
+}
+
+.left a:active {
+  background: red;
+  color: white;
+}
+
+
+/* Objective 6: Add second menu - center the links in the middle of the page (horizontally). */
+.center {
+  background-image: url("https://picsum.photos/1500/300");
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.center ul {
+  justify-content: center;
+}
+
+.center a {
+  color: white;
+}
+
+.center a:hover {
+  background: blue;
+  color: white;
+  opacity: 0.5;
+}
+
+.center a:active {
+  background: red;
+  color: white;
+}
+
+ /* Objective 7: Add third menu - space the links evenly. */
+.space {
+  background-image: url("https://picsum.photos/1500/200");
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.space ul {
+  justify-content: space-between;
+}
+
+
+/* Objective 8: Add fourth menu - expand the links to fill up extra space. */
+.grow {
+  background-image: url("https://picsum.photos/1500/250");
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.grow li {
+    flex: auto;
+}
+
+.grow a {
+  color: white;
+}
+
+ /* Resets and Side Code */
+
+body {
+  margin: 0;
+  
+  font-size: 24px;
+  font-variant: small-caps;
+  font-family: Arial;
+  letter-spacing: 0.2rem;
+}
+
+nav {
+  margin-bottom: 5rem;
+}
+
+nav ul {
+  margin: 0;
+}
+</style>
+
+<body>
+  <nav class="left"> <!-- informs to the browser readers the navigation section -->
+    <ul>
+      <li><a href="#">Fighter</a></li>
+      <li><a href="#">Barbarian</a></li>
+      <li><a href="#">Bard</a></li>
+      <li><a href="#">Rogue</a></li>
+    </ul>
+  </nav>
+  
+  <!-- Objective 6: Add second menu here -->
+  <nav class="center"> 
+    <ul>
+      <li><a href="#">Fighter</a></li
+      <li><a href="#">Barbarian</a></li>
+      <li><a href="#">Bard</a></li>
+      <li><a href="#">Rogue</a></li>
+    </ul>
+  </nav>
+  
+  <!-- Objective 7: Add third menu here -->
+  <nav class="space"> 
+    <ul>
+      <li><a href="#">Fighter</a></li>
+      <li><a href="#">Barbarian</a></li>    
+      <li><a href="#">Bard</a></li>
+      <li><a href="#">Rogue</a></li>
+    </ul>
+  </nav>
+  
+  <!-- Objective 8: Add fourth menu here -->
+  <nav class="grow"> 
+    <ul>
+      <li><a href="#">Fighter</a></li>
+      <li><a href="#">Barbarian</a></li>
+      <li><a href="#">Bard</a></li>
+      <li><a href="#">Rogue</a></li>
+    </ul>
+  </nav>
+</body>
+</html>

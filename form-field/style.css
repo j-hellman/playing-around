@@ -1,0 +1,71 @@
+/* List style */
+fieldset ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    
+    justify-content: space-around;
+    padding: 0.3em;
+  } 
+  
+  /* Form style */
+  form {
+    width: 60ch;
+    min-width: 400px;
+    margin: auto;
+    border: 3px solid grey;
+    box-shadow: -8px 8px 8px;
+    border-radius: 1em;
+    padding: 1em;
+  }
+  
+  /* Fieldset style */
+  .fieldset-style {
+    border-radius: 1em;
+    margin: 1em;
+  }
+  
+  /* Legend style */
+  fieldset legend {
+    color: grey;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    font-variant: small-caps;
+    padding: 0 0.4em 0.4em;
+  }
+  
+  /* Styling the Header */
+  h2 {
+    letter-spacing: 0.2em;
+    font-variant: small-caps;
+    text-align: center;
+    margin: 0;
+    padding: 0.5em;
+  }
+  
+  /* Text font format */
+  p, li {
+    font-size: 18px;
+  }
+  
+  /* Text field format */
+  .text-field p {
+    display: flex;
+  }
+  
+  .text-field p label {
+    width: 13ch;
+  }
+  
+  .text-field p input {
+    flex: 1;
+  }
+  
+  footer {
+    text-align: center;
+  }
+  
+  button {
+    padding: 0.5em 2em; 
+  }

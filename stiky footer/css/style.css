@@ -1,0 +1,35 @@
+.wrapper {
+    display: grid;
+    
+  /* Defines 3 rows */
+    grid-template-rows: auto 1fr auto;
+    
+  /* Defines the screen size*/
+    min-height: 100vh;
+  }
+  
+  main {
+    flex: 1;
+  }
+  
+  /* Make it Pretty */
+  header {
+    background-color: darkgreen;
+    padding: 1em;
+    color: white;
+    text-align: center;
+    letter-spacing: 0.2em;
+    font-variant: small-caps;
+  }
+  
+  main {
+    margin: 0 auto;
+    width: 40ch;
+  }
+  
+  footer {
+    background: darkgreen;
+    color: white;
+    text-align: center;
+    padding: 1em;
+  }

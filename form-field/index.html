@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+    <head>
+        <title>Form field</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>    
+        <div class="wrapper">
+            <form action="#">
+                <header>
+                    <h2>Please fill out our form</h2>
+                </header>
+                
+                <!-- First section of the form -->
+                <fieldset class="fieldset-style">
+                    <legend>Personal information</legend>
+                    <div class="text-field">
+                        <p>
+                            <label for="fname">First Name:<abbr title="required" aria-label="required">*</abbr></label> 
+                            <input type="text" id="fname" name="firstName" placeholder="Type your first name here" required>
+                        </p>
+                        <p>
+                            <label for="lname">Last Name:<abbr title="required" aria-label="required">*</abbr></label> 
+                            <input type="text" id="lname" name="lastName" placeholder="Type you last name here" required>
+                        </p>
+                        <p>
+                            <label for="email">E-mail:<abbr title="required" aria-label="required">*</abbr></label> 
+                            <input type="email" id="email" name="email"  placeholder="Type your e-mail here" required>
+                        </p>
+                        <p>
+                            <label for="address">Address:<abbr title="required" aria-label="required">*</abbr></label> 
+                            <input type="text" id="address" name="address"  placeholder="Type your address here" required>
+                        </p>
+                        <!-- TODO: add GENDER label with Male and Famale options in the same line of AGE -->
+                        <p>
+                            <label for="age">Age:</label> 
+                            <input type="number" id="age" name="age" min='0' placeholder="Type your age here">
+                        </p>
+                    </div>
+                </fieldset>
+            
+                <!-- Second section of the form: Checkbox -->
+                <fieldset class="fieldset-style">
+                    <legend>Fruit Preferences</legend>
+                    <ul>
+                        <li>
+                        <!-- Checkbox is prefered to be declared before the label -->
+                            <input type="checkbox" id="taste2" name="tasteBanana" value="banana">
+                            <label for="taste2">I like apple</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="taste1" name="tasteCherry" value="cherry">
+                            <label for="taste1">I like cherry</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="taste3" name="tasteBanana" value="banana">
+                            <label for="taste3">I like banana</label>
+                        </li>
+                    </ul>
+                </fieldset>
+            
+                <!-- Third section of the form: Checkbox (ratio type) -->
+                <fieldset class="fieldset-style">
+                    <legend>Favourite Suit</legend>
+                    <ul>
+                        <li>
+                        <!-- Checkbox (ratio) is prefered to be declared before the label -->
+                            <input type="radio" id="title1" name="title" value="K" >
+                            <label for="title1">King </label>
+                        </li>
+                        <li>
+                            <input type="radio" id="title2" name="title" value="Q">      
+                            <label for="title2">Queen</label>
+                        </li>
+                        <li> 
+                            <input type="radio" id="title3" name="title" value="J">
+                            <label for="title3">Joker</label> 
+                        </li>
+                    </ul>
+                </fieldset>  
+            
+                <footer>
+                    <!-- Submit: option 1 -->
+                    <!-- <input type="submit" name="submit" value="Submit"> -->
+            
+                    <!-- submit: option 2 -->
+                    <button type="submit">Submit</button>
+                </footer>
+            </form>
+        </div>
+    </body>
+</html>
