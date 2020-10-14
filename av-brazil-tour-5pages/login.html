@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+  <head>
+    <title>Brazil's beauty</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Brazil Tour Company" >
+    <meta name="keywords" content="Brazil, Brazil's beauty, Brazilian nature">
+    <meta name="author" content="Jaime Hellman">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
+  
+    <!-- Using media-query for this specific page -->
+    <style>
+      /* Change nav flex-direction at 680px screen */
+      @media screen and (max-width: 680px) {
+      nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 5em;
+      }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+
+      <!-- Navigation bar -->
+      <nav>
+        <!-- Company's Logo -->
+        <p class="logo"><a href="index.html">Brazil Tour Company</a></p>
+        <!-- Nav menu -->
+        <ul>
+          <div class="nav-gallery">
+            <li><a href="gallery.html">Gallery</a></li>  
+          </div>
+          <div class="nav-contact">
+            <li><a href="contact-us.html">Contact Us</a></li>
+          </div>
+        </ul>
+      </nav>
+
+      <!-- Login form -->
+      <form action="#">          
+        <fieldset class="fieldset-style">
+          <legend>Login</legend> 
+          <div class="text-field">
+            <p>
+              <label for="username">Username:<abbr title="Required" aria-label="required" >*</abbr></label> 
+              <input type="email" id="username" name="username" placeholder="Type your username (email) here" required>
+            </p>
+            <p>
+              <label for="password">Password:<abbr title="Required" aria-label="required">*</abbr></label> 
+              <input type="password" id="password" name="password"  placeholder="Type your password here" required>
+            </p>
+          </div>
+          <!-- Forgot password phrase -->
+          <p class="pass-forgot"><a href="#">Forgot your password?</a></p>
+          <!-- Submit button -->
+          <footer>
+            <button type="submit">Submit</button>
+          </footer>
+        </fieldset>
+      </form>
+      
+      <!-- Footer -->
+      <footer>
+        &copy; Jaime Hellman - Oct/2020
+      </footer>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+  <head>
+    <title>Brazil's beauty</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Brazil Tour Company" >
+    <meta name="keywords" content="Brazil, Brazil's beauty, Brazilian nature">
+    <meta name="author" content="Jaime Hellman">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
+  
+    <!-- Using media-query for this specific page -->
+    <style>
+    /*  Change the photo size at 1180px screen */
+      @media screen and (max-width: 1180px) {
+        img {
+          width: 120px;
+          height: 120px;
+        }
+      }
+      
+      /*  Change team-cards flex-direction at 1035px screen */
+      @media screen and (max-width: 1035px) {
+        .wrap-teamcards {
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          height: auto;
+        }
+      }
+
+      /* Change nav flex-direction at 680px screen */
+      @media screen and (max-width: 680px) {
+        nav {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          height: 5em;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      
+      <!-- Navigation bar -->
+      <nav>
+        <!-- Company's Logo -->
+        <p class="logo"><a href="index.html">Brazil Tour Company</a></p>
+        <!-- Nav menu -->
+        <ul>
+          <div class="nav-gallery">
+            <li><a href="gallery.html">Gallery</a></li>  
+          </div>
+          <div class="nav-contact current">
+            <li><a href="contact-us.html">Contact Us</a></li>
+          </div>
+        </ul>
+      </nav> 
+
+      <!-- Team cards -->
+      <div class="wrap-teamcards">
+        <!-- Mario -->
+        <div class="teamcard">
+          <div>
+            <img src="img/source/face-teamcard1.jpg" alt="Mario photo" width="180" height="180">
+            <h1>Mario</h1>
+          </div>
+          <div>
+            <h2>Manager</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><br>
+              Voluptatum in iste ea quam fugit. Utamba magnam iusto cipit, ullam excepturi nihil.
+            </p>
+          </div>
+        </div>
+
+        <!-- Yoshi -->
+        <div class="teamcard">
+          <div>
+            <img src="img/source/face-teamcard3.jpg" alt="Yoshi photo" width="180" height="180">
+            <h1>Yoshi</h1>
+          </div>
+          <div>
+            <h2>Assistant</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br><br>
+              Alias fuga soluta aliquid distinctio em praesentium, ea sunt consequuntur apewas riam dolores.
+            </p>
+          </div>
+        </div>
+
+        <!-- Luigi -->
+        <div class="teamcard">
+          <div>
+            <img src="img/source/face-teamcard2.jpg" alt="Luigi photo" width="180" height="180">
+            <h1>Luigi</h1>
+          </div>
+          <div>
+            <h2>Supervisor</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><br>
+              Magnam voluptatibus iure asperiores sbeim pariatur saepe libero fugit nihil. Sequih, ipsa nobis.
+            </p>
+          </div>
+        </div>
+      </div>
+        
+      <!-- Contact Us form -->
+      <form action="#">          
+        <fieldset class="fieldset-style">
+          <legend>Contact Us</legend>
+          <div class="text-field">
+            <p>
+              <label for="fullname">Name:<abbr title="Required" aria-label="required" >*</abbr></label> 
+              <input type="text" id="fullname" name="fullName" placeholder="Type your name here" required>
+            </p>
+            <p>
+              <label for="email">E-mail:<abbr title="Required" aria-label="required">*</abbr></label> 
+              <input type="email" id="email" name="email"  placeholder="Type your e-mail here" required>
+            </p>
+          </div>
+          <!-- Submit button -->
+          <footer>
+            <button type="submit">Submit</button>
+          </footer>
+        </fieldset> 
+      </form>
+      
+      <!-- Footer -->
+      <footer>
+        &copy; Jaime Hellman - Oct/2020
+      </footer>
+        
+    </div>
+  </body>
+</html>

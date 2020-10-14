@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+  <head>
+    <title>Hero's Smoke Shop</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Smoke shop in Calgary">
+    <meta name="keywords" content="Smoke shop, smoke, shop, cigarrete">
+    <meta name="author" content="Jaime Hellman">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="wrapper"> 
+      <!-- Nav section -->
+      <nav>
+        <!-- Company's Logo -->
+        <a class="logo" href="#">Hero's Smoke Shop</a>
+        <!-- Nav menu -->
+        <ul>
+          <li><a href="#">Product & Service</a></li>  
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Location & Hours</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav> 
+
+      <!-- Main section -->
+      <main class="wrap-main">
+        <div class="container">
+          <div class="invit-phrase">
+            <h1>Join<br>our grand<br>opening<br>in Calgary!</h1>
+          </div>
+ 
+          <div class="wrap-form">
+            <div class="newsletter-title">
+              <p>Sign-up to our newsletter</p>
+            </div>
+            <!-- Subscribe form -->
+            <form action="#">          
+              <!-- Personal information section -->
+              <fieldset class="fieldset-style">
+                <legend>Personal information</legend>
+                <div class="text-field">
+                  <p>
+                    <label for="fullname">Name:<abbr title="required" aria-label="required" >*</abbr></label> 
+                    <input type="text" id="fullname" name="fullName" placeholder="Type your name here" required>
+                  </p>
+                  <p>
+                    <label for="email">E-mail:<abbr title="required" aria-label="required">*</abbr></label> 
+                    <input type="email" id="email" name="email"  placeholder="Type your e-mail here" required>
+                  </p>
+                </div>
+              </fieldset>
+                
+              <!-- Favourite meal section -->
+              <fieldset class="fieldset-style">
+                <legend>Favourite meal of the day</legend>
+                <div class="text-field-meal">
+                  <p>
+                    <label for="meal">Choose your meal:</label>
+                    <select id="meal" name="menuMeal">
+                      <option value="breakfast">Breakfast</option>
+                      <option value="lunch">Lunch</option>
+                      <option value="dinner">Dinner</option>
+                    </select>
+                  </p>
+                </div>
+              </fieldset>
+                
+              <!-- Checkbox promotional section -->
+              <fieldset class="fieldset-style">
+                  <input type="checkbox" id="promo1" name="promoEmails" value="banana">
+                  <label for="promo1">I would like to receive promotional emails</label>
+              </fieldset>
+    
+              <!-- Form's footer -->
+              <footer>
+                <button type="submit">Submit</button>
+                <!-- Option 2 for "Submit button" -->
+                <!-- <input type="submit" name="submit" value="Submit"> -->
+              </footer>
+            </form>
+          </div>
+        </div>
+      </main>
+      <!-- Footer section -->
+      <footer>
+        &copy; Jaime Hellman - 2020
+      </footer>
+    </div>
+  </body>
+</html> 
+  

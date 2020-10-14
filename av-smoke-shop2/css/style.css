@@ -1,0 +1,178 @@
+/* BODY */
+/* Wrapper body */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Main body */
+.wrap-main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Container body */
+.container {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+}
+
+/* Footer body */
+footer {
+  font-size: 15px;
+  padding: 0.3em;
+  text-align: center;
+  background-color: white;
+}
+
+
+/* Subscribe-form body */
+form {
+  width: 29vw;
+  min-width: 20vw;
+  margin: auto;
+  background-color: white;
+  border-radius: 1em;
+  padding: 0.5em;
+  opacity: 80%;
+}
+
+.wrap-form {
+  margin-top: 1em;
+  margin-right: 5em;
+}
+
+/* Body text field form */
+.text-field p {
+  display: flex;
+}
+
+.text-field p label {
+  width: 10ch;
+}
+
+.text-field-meal p label {
+  width: 15ch; 
+}
+
+.text-field p input {
+  width: 30ch;
+}
+
+
+/* BACKGROUND-IMAGE */
+/* Body background-image */
+.wrapper {
+  background-image: url("../img/background-img.webp");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+/* NAVIGATION BAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 7em;
+  background-color: none;
+  border-bottom: 2px solid white; 
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+.logo { 
+  /* TODO: try to make the logo design better */
+  display: flex;
+  align-items: center;
+}
+
+
+/* FONTS */
+/* Navigation bar font  */
+nav ul a {
+  font-family: 'Righteous', sans-serif;
+  font-size: 18px;  
+  color: white;
+  letter-spacing: 0.1em;
+  padding: 0.5em 0.5em;
+  margin-right: 0.7em;
+}
+
+/* Logo font */
+.logo {
+  font-size: 40px;
+  color: white;
+  margin-left: 1em;
+}
+
+/* Invitation-phrase font */
+.invit-phrase {
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: white;
+  text-align: right;
+  letter-spacing: 0.3em;
+  margin: 2em;
+  width: 40ch;
+}
+
+/* Newsletter-title font */
+.newsletter-title {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+}
+
+/* Fieldset legend form font */
+fieldset legend {
+  font-family: 'Righteous', sans-serif;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  border-bottom: 2px solid black;
+}
+
+/* Fieldset form font */
+.fieldset-style {
+  font-family: 'Righteous', sans-serif;
+  border: none;
+  margin: 0.5em;
+}
+
+/* Button submit form font */
+button {
+  font-family: 'Righteous', sans-serif;
+  padding: 0.5em 2em; 
+}
+
+/* Abbreviation font */
+abbr {
+  color: red;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+
+/* LINKS */ 
+/* Navigation bar links */
+nav ul a a:hover {
+  color: black;
+  font-size: 20px;
+  background-color: white;
+  border-radius: 25%;
+}
+
+nav ul a:active {
+  opacity: 0.4;
+} 

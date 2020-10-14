@@ -1,0 +1,76 @@
+
+/* Format team card */
+.wrapper {
+    min-width: 20ch;
+    max-width: 40ch;
+    margin: 3em auto;
+}
+
+header {
+    display: flex;
+    height: 30vh;
+    justify-content: center;
+    align-items: flex-end;
+    
+/* TODO: code the header to do not shrink */
+}
+
+/* Make it pretty */
+.wrapper {
+    background-color: rgb(236, 231, 231);
+    box-shadow: 5px 5px 8px rgb(201, 197, 197);
+}
+
+header {
+    background-image: url("../images/river.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% 65%;
+}
+
+.header-photo {
+    width: 92%;
+    height: 96%;
+    border-radius: 50%;
+} 
+
+.header-photo-shadow {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 45%;
+    height: 75%;
+    border-radius: 50%;
+    background-color: rgb(236, 231, 231);
+} 
+
+h1 {
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Days One', sans-serif;
+}
+
+p {
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Prompt', Arial;
+    font-weight: bold;
+    padding: 0 1em;
+}
+
+/* Make footer pretty */
+footer ul {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 40px;
+    padding-bottom: 0.2em;
+}
+
+.fab {
+    color: darkblue;
+}
+
+/* Make <hr> pretty */
+hr {
+    color: rgb(236, 231, 231);
+}

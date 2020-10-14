@@ -1,0 +1,312 @@
+/* FLEXBOX */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+}
+
+.nav-gallery, .nav-contact {
+  display: flex;
+  align-items: center;
+}
+
+.nav-login {
+  display: flex;
+}
+
+.nav-login {
+  align-items: center;
+}
+
+.nav-register {
+  display: flex;
+  align-items: center;
+}
+
+.logo { 
+  display: flex;
+  align-items: center;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+}
+
+.wrap-teamcards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.teamcard {
+  display: flex;
+}
+
+.text-field p {
+  display: flex;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+/* HEIGHT & WIDTH */
+.wrapper {
+  height: 100vh;
+  width: auto;
+}
+
+nav {
+  height: 3em;
+}
+
+.hero-section {
+  height: 80vh;
+}
+
+.wrap-teamcards {
+  height: 50vh;
+  width: auto;
+}
+
+.teamcard {
+  width: 25em;
+  height: auto;
+}
+
+form {
+  width: 45ch;
+  min-width: 20vw;
+}
+
+.text-field p label {
+  width: 10ch;
+}
+
+.text-field p input {
+  width: 30ch;
+}
+
+.gallery {
+  max-width: 1000px;
+  min-width: 200px;
+}
+
+
+/* MARGIN */
+nav a {
+  margin: 0 1em;
+}
+
+.hero-section-p {
+  margin: 0.6em;
+}
+
+.home-page-text {
+  margin-right: 5em;
+  margin-left: 5em;
+}
+
+.wrap-teamcards {
+  margin-top: 1em;
+}
+
+.teamcard {
+  margin: 1em;
+}
+
+.teamcard img {
+  margin: 1em;
+}
+
+.teamcard h1 {
+  margin-top: 0;
+}
+
+.teamcard h2 {
+  margin-top: 1em;
+}
+
+form {
+  margin: auto;
+}
+
+.wrap-gallery {
+  margin: 2em 0;
+}
+
+.gallery {
+  margin: auto;
+}
+
+.gallery figure {
+  margin: 1em;
+}
+
+
+/* PADDING */
+.hero-section {
+  padding-left: 2em;
+}
+
+footer {
+  padding-bottom: 0.5em;
+}
+
+.teamcard h2 {
+  padding-right: 1em;
+}
+
+.teamcard p {
+  padding-right: 1em;
+}
+
+form {
+  padding: 0.5em;
+}
+
+figcaption {
+  padding-top: 0.1em;
+}
+
+
+/* BORDER */
+.nav-login {
+  border-right: solid black;
+  border-left: solid black;
+}
+
+.teamcard {
+  border: 1px solid black;
+}
+
+.teamcard img {
+  border-radius: 50%;
+}
+
+.fieldset-style {
+  border: solid black;
+}
+
+
+/* FONT */
+nav ul {
+  font-size: 18px;
+  font-family: 'Salsa', cursive;
+}
+
+nav a {
+  color: darkgreen;
+  letter-spacing: 0.2em;
+}
+
+.nav-register a {
+  color: white;
+  text-align: center;
+}
+
+.current {
+  text-decoration: underline;
+}
+
+.logo { 
+  font-family: 'Lily Script One', cursive;
+  font-size: 25px;
+}
+
+.hero-section {
+  font-size: 40px;
+  color: white;
+}
+
+.hero-section-p {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.home-page-text {
+  font-family: 'Overpass', sans-serif;
+  font-size: 20px;
+  text-align: justify;
+}
+
+footer {
+  text-align: center;
+}
+
+.teamcard h1 {
+  font-family: 'Salsa', cursive;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+.teamcard h2 {
+  font-family: 'Overpass', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.teamcard p {
+  text-align: justify;
+}
+
+abbr {
+  color: red;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.fieldset-style {
+  font-family: 'Overpass', sans-serif;
+}
+
+fieldset legend {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+.pass-forgot {
+  font-size: 12px;
+  text-align: right;
+}
+
+.pass-forgot a {
+  color: darkslategray;
+  text-decoration: none;
+}
+
+figcaption {
+  font-family: 'Overpass', sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+/* BACKGROUND COLORS & IMAGES */
+.nav-register {
+  background-color: darkgreen;
+}
+
+.hero-section {
+  background-image: url("../img/desktop-first/lg/photo-home-lg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+form {
+  background-color: white;
+}
